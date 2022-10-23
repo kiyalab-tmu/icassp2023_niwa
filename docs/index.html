@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        figure {
+            display: inline-block;   /* インラインブロック化 */
+            text-align:center;
+            vertical-align:top;
+            width: 250px;
+            margin: 0px, 5px, 0px, 5px;
+        }
+        img{text-align:center; width: 150px; height: auto;}
+        figcaption{text-align:center; font:18px arial;}
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center">A privacy preserving method using secret key for convolutional neural network-based classification tasks</h1>
+    <p style="text-align: right">Shoko Niwa, Sayaka Shiota, Hitoshi Kiya</p>
+    <p style="text-align: right">Tokyo Metropolitan University</p>
+    <h2>Experiment in Phase Restoration</h2>
+    <p> We used Phase Gradient Heap Integration (PGHI), one of the state-of-the-art phase reconstruction algorithms, to evaluate whether the original speech can be reconstructed from the encrypted spectrogram.</p>
+    <h2>Result in Phase Restoration</h2>
+    <p>
+        The results of phase restoration using PGHI on the encrypted spectrogram are shown in Figs.1 and 2.
+        Fig.1(b) is the spectrogram obtained by applying pixel shuffling to the original spectrogram Fig.1(a) under the condition of M=8, and Fig.1(c) is a spectrogram of the audio obtained by applying phase restoration to Fig.1(b).
+        Similarly, Fig.2(b) is the spectrogram obtained by applying pixel shuffling to the original spectrogram Fig.2(a) under the condition of M=8, and Fig.2(c) is a spectrogram of the audio obtained by applying phase restoration to Fig.2(b).    
+    </p>
+    <p>
+        In the case of bit flipping, the spectrogram values change drastically regardless of M, so that when the phase of the spectrogram encrypted by bit flipping is restored, the original voice is almost inaudible. 
+    </p>
+
+<div style="text-align: center;">
+<figure>
+    <img src="ori.png" alt="Fig.1(a) Original spectrogram">
+    <figcaption>Fig.1(a): Original spectrogram</figcaption>
+</figure>
+<figure>
+    <img src="pix8.png" alt="Fig.1(b) Pixel shuffling (M=8)">
+    <figcaption>Fig.1(b): Pixel shuffling (M=8)</figcaption>
+</figure>
+<figure>
+    <img src="pix8PGHI.png" alt="Fig.1(c) phase restoration to Fig.1(b)">
+    <figcaption>Fig.1(c): Phase restoration to Fig.1(b)</figcaption>
+</figure>
+<p style="text-align: center; font:20px; margin: 0px; font-weight: bold;">
+    Fig.1: Examples of phase reconstruction of a spectrogram encrypted by pixel shuffling (M=8)
+</p>
+</div>
+
+</body>
+</html>
