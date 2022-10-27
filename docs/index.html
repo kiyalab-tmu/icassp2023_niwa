@@ -13,13 +13,13 @@
             width: 200px;
             margin: 0px, 0px, 0px, 0px;
         }
-        img{text-align:center; width: 150px; height: auto;}
+        img{text-align:center; width: 150px; height: auto; padding: 0px, 0px, 0px, 0px;}
         figcaption{text-align:center; font:18px arial;}
         .brocksize{
             text-align: right;
             border-right: solid 5px rgb(179, 179, 179);
             display: inline-block; 
-            padding: 10px 60px 130px 0px;
+            padding: 10px 50px 170px 0px;
             margin: 20px 0px 0px 0px;
             vertical-align:top;
             width: 50px;
@@ -102,7 +102,7 @@
     <p style="text-align: right">Shoko Niwa, Sayaka Shiota, Hitoshi Kiya</p>
     <p style="text-align: right">Tokyo Metropolitan University</p>
     <h2>4.2.2 ASR Task</h2>
-    <p>Phase reconstruction(文献): a spectrogram reconstructed from an encrypted spectrogram by pixel shuffling.</p>
+    <p>Phase reconstruction [1] : a spectrogram reconstructed from an encrypted spectrogram by pixel shuffling and bit flipping.</p>
 
 <!--スペクトログラムをLibriSpeechのやつにしとく-->
 <div class="box">
@@ -114,10 +114,10 @@
     </div>
     <div class="figaudio">
         <figure>
-            <img src="ori.png" alt="Plain">
+            <img src="./audio/ori.png" alt="Plain">
             <figcaption>Plain</figcaption>
         </figure>
-        <audio src="NF001001_HS.wav" controls style="vertical-align: middle; width: 230px;" type="audio/wav"><p>Your browser doesn't support HTML5 audio or wav format.</p></audio>
+        <audio src="./audio/3575-170457-0021.wav" controls style="vertical-align: middle; width: 230px;" type="audio/wav"><p>Your browser doesn't support HTML5 audio or wav format.</p></audio>
     </div>
     <div class="set">
         <p style="margin: 0px 0px 10px 0px; padding: 0px; font-size: small; text-align: center; vertical-align:middle;">Encrypt</p>
@@ -130,7 +130,7 @@
     
     <div class="figaudio">
         <figure>
-            <img src="pix8.png" alt="Pixel shuffling (M=8)">
+            <img src="./audio/pix8.png" alt="Pixel shuffling (M=8)">
             <figcaption>Pixel shuffling (M=8)</figcaption>
         </figure>
     </div>
@@ -144,10 +144,10 @@
     </div>
     <div class="figaudio">
         <figure>
-            <img src="pix8PGHI.png" alt="Phase reconstruction">
+            <img src="./audio/pix8PGHI.png" alt="Phase reconstruction">
             <figcaption>Phase reconstruction</figcaption>
         </figure>
-        <audio src="NF001001_HS.wav" controls style="vertical-align: middle; width: 230px;" type="audio/wav"><p>Your browser doesn't support HTML5 audio or wav format.</p></audio>
+        <audio src="./audio/pix8.wav" controls style="vertical-align: middle; width: 230px;" type="audio/wav"><p>Your browser doesn't support HTML5 audio or wav format.</p></audio>
     </div>
 </div>
 
@@ -157,10 +157,10 @@
     </div>
     <div class="figaudio">
         <figure>
-            <img src="ori.png" alt="Plain">
+            <img src="./audio/ori.png" alt="Plain">
             <figcaption>Plain</figcaption>
         </figure>
-        <audio src="NF001001_HS.wav" controls style="vertical-align: middle; width: 230px;" type="audio/wav"><p>Your browser doesn't support HTML5 audio or wav format.</p></audio>
+        <audio src="./audio/3575-170457-0021.wav" controls style="vertical-align: middle; width: 230px;" type="audio/wav"><p>Your browser doesn't support HTML5 audio or wav format.</p></audio>
     </div>
     <div class="set">
         <p style="margin: 0px 0px 10px 0px; padding: 0px; font-size: small; text-align: center; vertical-align:middle;">Encrypt</p>
@@ -172,7 +172,7 @@
     </div>
     <div class="figaudio">
         <figure>
-            <img src="pix16.png" alt="Pixel shuffling (M=16)">
+            <img src="./audio/pix16.png" alt="Pixel shuffling (M=16)">
             <figcaption>Pixel shuffling (M=16)</figcaption>
         </figure>
     </div>
@@ -186,26 +186,27 @@
     </div>
     <div class="figaudio">
         <figure>
-            <img src="pix16PGHI.png" alt="Phase reconstruction">
+            <img src="./audio/pix16PGHI.png" alt="Phase reconstruction">
             <figcaption>Phase reconstruction</figcaption>
         </figure>
-        <audio src="NF001001_HS.wav" controls style="vertical-align: middle; width: 230px;" type="audio/wav"><p>Your browser doesn't support HTML5 audio or wav format.</p></audio>
+        <audio src="./audio/pix16.wav" controls style="vertical-align: middle; width: 230px;" type="audio/wav"><p>Your browser doesn't support HTML5 audio or wav format.</p></audio>
     </div>        
 </div>
 <div style="border-bottom: double 5px black"></div>
 <div class="box">
     <p>Bit flipping</p>
 </div>
+<p>You should <strong>turn down the volume</strong> when you play the Phase reconstruction audio.</p>
 <div class="figs">
     <div class="brocksize">
-        <p>M=16</p>
+        <p>M=8</p>
     </div>
     <div class="figaudio">
         <figure>
-            <img src="ori.png" alt="Plain">
+            <img src="./audio/ori.png" alt="Plain">
             <figcaption>Plain</figcaption>
         </figure>
-        <audio src="NF001001_HS.wav" controls style="vertical-align: middle; width: 230px;" type="audio/wav"><p>Your browser doesn't support HTML5 audio or wav format.</p></audio>
+        <audio src="./audio/3575-170457-0021.wav" controls style="vertical-align: middle; width: 230px;" type="audio/wav"><p>Your browser doesn't support HTML5 audio or wav format.</p></audio>
     </div>
     <div class="set">
         <p style="margin: 0px 0px 10px 0px; padding: 0px; font-size: small; text-align: center; vertical-align:middle;">Encrypt</p>
@@ -217,8 +218,8 @@
     </div>
     <div class="figaudio">
         <figure>
-            <img src="pix16.png" alt="Bit flipping (M=16)">
-            <figcaption>Bit flipping (M=16)</figcaption>
+            <img src="./audio/bit8.png" alt="Bit flipping (M=8)">
+            <figcaption>Bit flipping (M=8)</figcaption>
         </figure>
     </div>
     <div class="set">
@@ -231,11 +232,13 @@
     </div>
     <div class="figaudio">
         <figure>
-            <img src="pix16PGHI.png" alt="Phase reconstruction">
+            <img src="./audio/bit8PGHI.png" alt="Phase reconstruction">
             <figcaption>Phase reconstruction</figcaption>
         </figure>
-        <audio src="NF001001_HS.wav" controls style="vertical-align: middle; width: 230px;" type="audio/wav"><p>Your browser doesn't support HTML5 audio or wav format.</p></audio>
+        <audio src="./audio/bit8.wav" controls muted style="vertical-align: middle; width: 230px;" type="audio/wav"><p>Your browser doesn't support HTML5 audio or wav format.</p></audio>
     </div>        
 </div>
+<p style="font-weight: bold;">Reference</p>
+<p>[1] Z. Průša, P. Balazs and P. L. Søndergaard, "A Noniterative Method for Reconstruction of Phase From STFT Magnitude," in IEEE/ACM Transactions on Audio, Speech, and Language Processing, vol. 25, no. 5, pp. 1154-1164, May 2017,</p>
 </body>
 </html>
