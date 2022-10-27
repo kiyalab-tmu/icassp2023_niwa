@@ -19,7 +19,7 @@
             text-align: right;
             border-right: solid 5px rgb(179, 179, 179);
             display: inline-block; 
-            padding: 10px 60px 140px 0px;
+            padding: 10px 60px 130px 0px;
             margin: 20px 0px 0px 0px;
             vertical-align:top;
             width: 50px;
@@ -29,22 +29,75 @@
         .figs{
             display: inline-block; 
             text-align: left; 
-            margin: 0px 0px 10px 0px; 
-            padding: 10px 0px 10px 0px; 
+            margin: 0px 0px 0px 0px; 
+            padding: 0px 0px 0px 0px; 
             vertical-align:top;
         }
         .figaudio{
             display:inline-block; 
             text-align:center; 
             vertical-align:top;
-            width: 300px; 
+            width: 280px; 
             height: 300px;
-            margin: 0px 0px 0px 0px;
+            margin: 0px;
             padding: 0px;
+        }
+        .yazirusi{
+            display: inline-block;
+            position: relative;
+            vertical-align:middle;
+            text-align: center;
+            width: 50px;
+            margin: 0px;
+        }
+        .line01{
+            height: 1px;
+            width: 50px;
+            background-color: #000;
+        }
+        .line02{
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform-origin: right bottom;
+            width: 15px;
+            height: 1px;
+            background-color: #000;
+            transform: rotate(45deg);
+        }
+        .line03{
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform-origin: right bottom;
+            width: 15px;
+            height: 1px;
+            background-color: #000;
+            transform: rotate(-45deg);
+        }
+        .set{
+            display: inline-block;
+            vertical-align:middle;
+            text-align: center;
+            width: 70px;
+            margin: 100px 0px 0px 0px;
+        }
+        .box{
+            padding: 0.5em 1em;
+            margin: 2em 0;
+            color: black;
+            background: white;
+            border-left: solid 10px #3c3c3d;
+        }
+        .box p{
+            margin: 0; 
+            padding: 0;
+            font-weight: bold;
+            font-size: large;
         }
     </style>
 </head>
-<body style="padding: 10px 50px 10px 50px; margin: 10px 50px 10px 50px;">
+<body style="padding: 10px 35px 10px 35px; margin: 10px 35px 10px 35px;">
     <h1 style="text-align: center">A privacy preserving method using secret key for convolutional neural network-based classification tasks</h1>
     <p style="text-align: right">Shoko Niwa, Sayaka Shiota, Hitoshi Kiya</p>
     <p style="text-align: right">Tokyo Metropolitan University</p>
@@ -52,6 +105,9 @@
     <p>Phase reconstruction(文献): a spectrogram reconstructed from an encrypted spectrogram by pixel shuffling.</p>
 
 <!--スペクトログラムをLibriSpeechのやつにしとく-->
+<div class="box">
+    <p>Pixel shuffling</p>
+</div>
 <div class="figs">
     <div class="brocksize">
         <p>M=8</p>
@@ -61,23 +117,40 @@
             <img src="ori.png" alt="Plain">
             <figcaption>Plain</figcaption>
         </figure>
-        <audio src="NF001001_HS.wav" controls style="vertical-align: middle; width: 250px" type="audio/wav"></audio>
+        <audio src="NF001001_HS.wav" controls style="vertical-align: middle; width: 230px;" type="audio/wav"><p>Your browser doesn't support HTML5 audio or wav format.</p></audio>
     </div>
+    <div class="set">
+        <p style="margin: 0px 0px 10px 0px; padding: 0px; font-size: small; text-align: center; vertical-align:middle;">Encrypt</p>
+        <div class="yazirusi">
+            <div class="line01"></div>
+            <div class="line02"></div>
+            <div class="line03"></div>
+        </div>
+    </div>
+    
     <div class="figaudio">
         <figure>
             <img src="pix8.png" alt="Pixel shuffling (M=8)">
             <figcaption>Pixel shuffling (M=8)</figcaption>
         </figure>
     </div>
+    <div class="set">
+        <p style="margin: 0px 0px 10px 0px; padding: 0px; font-size: small; text-align: center; vertical-align:middle;">Reconstruct</p>
+        <div class="yazirusi">
+            <div class="line01"></div>
+            <div class="line02"></div>
+            <div class="line03"></div>
+        </div>
+    </div>
     <div class="figaudio">
         <figure>
             <img src="pix8PGHI.png" alt="Phase reconstruction">
             <figcaption>Phase reconstruction</figcaption>
         </figure>
-        <audio src="NF001001_HS.wav" controls style="vertical-align: middle;  width: 250px;" type="audio/wav"></audio>
+        <audio src="NF001001_HS.wav" controls style="vertical-align: middle; width: 230px;" type="audio/wav"><p>Your browser doesn't support HTML5 audio or wav format.</p></audio>
     </div>
 </div>
-<div style="border-bottom: dashed 1px black"></div>
+
 <div class="figs">
     <div class="brocksize">
         <p>M=16</p>
@@ -87,7 +160,15 @@
             <img src="ori.png" alt="Plain">
             <figcaption>Plain</figcaption>
         </figure>
-        <audio src="NF001001_HS.wav" controls style="vertical-align: middle; width: 250px" type="audio/wav"></audio>
+        <audio src="NF001001_HS.wav" controls style="vertical-align: middle; width: 230px;" type="audio/wav"><p>Your browser doesn't support HTML5 audio or wav format.</p></audio>
+    </div>
+    <div class="set">
+        <p style="margin: 0px 0px 10px 0px; padding: 0px; font-size: small; text-align: center; vertical-align:middle;">Encrypt</p>
+        <div class="yazirusi">
+            <div class="line01"></div>
+            <div class="line02"></div>
+            <div class="line03"></div>
+        </div>
     </div>
     <div class="figaudio">
         <figure>
@@ -95,15 +176,26 @@
             <figcaption>Pixel shuffling (M=16)</figcaption>
         </figure>
     </div>
+    <div class="set">
+        <p style="margin: 0px 0px 10px 0px; padding: 0px; font-size: small; text-align: center; vertical-align:middle;">Reconstruct</p>
+        <div class="yazirusi">
+            <div class="line01"></div>
+            <div class="line02"></div>
+            <div class="line03"></div>
+        </div>
+    </div>
     <div class="figaudio">
         <figure>
             <img src="pix16PGHI.png" alt="Phase reconstruction">
             <figcaption>Phase reconstruction</figcaption>
         </figure>
-        <audio src="NF001001_HS.wav" controls style="vertical-align: middle;  width: 250px;" type="audio/wav"></audio>
+        <audio src="NF001001_HS.wav" controls style="vertical-align: middle; width: 230px;" type="audio/wav"><p>Your browser doesn't support HTML5 audio or wav format.</p></audio>
     </div>        
 </div>
 <div style="border-bottom: double 5px black"></div>
+<div class="box">
+    <p>Bit flipping</p>
+</div>
 <div class="figs">
     <div class="brocksize">
         <p>M=16</p>
@@ -113,7 +205,15 @@
             <img src="ori.png" alt="Plain">
             <figcaption>Plain</figcaption>
         </figure>
-        <audio src="NF001001_HS.wav" controls style="vertical-align: middle; width: 250px" type="audio/wav"></audio>
+        <audio src="NF001001_HS.wav" controls style="vertical-align: middle; width: 230px;" type="audio/wav"><p>Your browser doesn't support HTML5 audio or wav format.</p></audio>
+    </div>
+    <div class="set">
+        <p style="margin: 0px 0px 10px 0px; padding: 0px; font-size: small; text-align: center; vertical-align:middle;">Encrypt</p>
+        <div class="yazirusi">
+            <div class="line01"></div>
+            <div class="line02"></div>
+            <div class="line03"></div>
+        </div>
     </div>
     <div class="figaudio">
         <figure>
@@ -121,12 +221,20 @@
             <figcaption>Bit flipping (M=16)</figcaption>
         </figure>
     </div>
+    <div class="set">
+        <p style="margin: 0px 0px 10px 0px; padding: 0px; font-size: small; text-align: center; vertical-align:middle;">Reconstruct</p>
+        <div class="yazirusi">
+            <div class="line01"></div>
+            <div class="line02"></div>
+            <div class="line03"></div>
+        </div>
+    </div>
     <div class="figaudio">
         <figure>
             <img src="pix16PGHI.png" alt="Phase reconstruction">
             <figcaption>Phase reconstruction</figcaption>
         </figure>
-        <audio src="NF001001_HS.wav" controls style="vertical-align: middle;  width: 250px;" type="audio/wav"></audio>
+        <audio src="NF001001_HS.wav" controls style="vertical-align: middle; width: 230px;" type="audio/wav"><p>Your browser doesn't support HTML5 audio or wav format.</p></audio>
     </div>        
 </div>
 </body>
